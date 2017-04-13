@@ -1,0 +1,24 @@
+
+$smallMediaQ: 40em;
+$mediumMediaQmin: 40.1em;
+$mediumMediaQmax: 63em;
+$maxMediaQ: 63.1em;
+
+
+@mixin size($size){
+  @if $size == small {
+    @media screen and (max-width: $smallMediaQ){
+      @content;
+    }
+  }
+  @else if $size == medium {
+    @media screen and (min-width: $mediumMediaQmin) and (max-width: $mediumMediaQmax){
+      @content;
+  }
+}
+  @else if $size == large {
+    @media screen and (min-width: $maxMediaQ){
+      @content;
+  }
+}
+}

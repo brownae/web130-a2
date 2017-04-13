@@ -1,2 +1,9 @@
 .sass-cache/
 *.css.map
+*gem
+*swp
+.DS_store
+_site
+Gemfile.lock
+npm-debug.log
+tmp/
