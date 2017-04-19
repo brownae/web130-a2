@@ -51,7 +51,8 @@ a:hover {
 
 article {
     border-bottom: solid 1px $brown;
-    margin-top: 15px; 
+    margin-top:15px;
+    padding-bottom: 15px;
 
     @include size(small){
     @include columns(1);
