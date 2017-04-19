@@ -1,7 +1,8 @@
 @import 'bourbon/bourbon';
 @import 'media-q';
+@import 'fonts';
 
-$pink: #FFCCCB;
+$pink: #ffb6c1;
 $tan: #FFD197;
 $brown: #7F3D17;
 $maroon: #7F1917;
@@ -12,15 +13,59 @@ $orange: #FF9F33;
 $red: #FF3333;
 $yellow: #FEF601;
 
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 6em;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
+    margin: 0 0 1em;
+    background-color: $pink;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $teal;
+}
+a:hover {
+    color: $orange;
+}
+
 
 article {
-  @include size(small){
+    border-bottom: solid 1px $brown;
+    margin-top: 15px; 
+
+    @include size(small){
     @include columns(1);
-  }
-  @include size(medium){
+    }
+    @include size(medium){
     @include columns(2);
-  }
-  @include size(large){
+    }
+    @include size(large){
     @include columns(3);
-  }
+    }
+    img {
+        width: 50%;
+        float: left;
+        margin-right: 10px;
+    }
+
 }
