@@ -54,19 +54,20 @@ article {
     margin-top:15px;
     padding-bottom: 15px;
 
-    @include size(small){
-    @include columns(1);
-    }
-    @include size(medium){
-    @include columns(2);
-    }
-    @include size(large){
-    @include columns(3);
-    }
-    img {
-        width: 50%;
-        float: left;
-        margin-right: 10px;
-    }
+        @include size(small){
+        @include columns(1);
+        }
+        @include size(medium){
+        @include columns(2);
+        }
+        @include size(large){
+        @include columns(3);
+        }
+
+        img {
+            width: 50%;
+            float: left;
+            margin-right: 10px;
+        }
 
 }
